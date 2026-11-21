@@ -1,3 +1,3 @@
-module github.com/adityatelange/hugo-PaperMod
+module github.com/seedunk/hugo-template
 
-go 1.16
+go 1.27.0
