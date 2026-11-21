@@ -1,0 +1,52 @@
+# 站点基础地址，部署时改成你的域名，本地预览不影响
+baseURL = "https://hugo.seedunk.com/"
+
+# 语言
+languageCode = "zh-CN"
+
+# 网站标题
+title = "Seedunk Hugo Template"
+
+themesDir = "./themes"
+theme = "seedunk"
+
+# 【可选】自定义文章目录，不需要就注释掉
+contentDir = "./doc"
+
+# 【可选】静态资源目录（图片等）
+# staticDir = "static" 
+# 【可选】输出到别的目录，一般命令行 -d 控制，这里可以不写
+# publishDir = "/var/www/myblog"
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'
+
+
+
+# 开启摘要
+summaryLength = 70
+
+# 日期格式
+[params]
+  dateFormat = "2006-01-02"
+
+# 关闭不需要的内置模块，加快编译
+disableKinds = ["RSS", "sitemap", "taxonomy"]
