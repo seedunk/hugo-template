@@ -1,0 +1,58 @@
+name = "seedunk"
+license = "MIT"
+licenselink = "https://github.com/seedunk/seedunk.github.io/blob/master/LICENSE"
+description = "Hugo theme"
+homepage = "https://github.com/seedunk/seedunk.github.io/"
+demosite = "https://github.com/seedunk/seedunk.github.io/"
+tags = [
+  "responsive",
+  "blog",
+  "clean",
+  "minimal",
+  "light",
+  "dark",
+  "fast",
+  "multilingual",
+  "search",
+  "seo",
+  "chroma",
+  "personal"
+]
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "cover-image",
+  "table-of-contents",
+  "opengraph",
+  "twitter-cards",
+  "favicon",
+  "archive",
+  "share-icons",
+  "cover",
+  "multilingual",
+  "social-icons",
+  "minified-assets",
+  "theme-toggle",
+  "menu-location-indicator",
+  "scroll-to-top",
+  "search",
+  "breadcrumbs",
+  "reading-time",
+  "word-count",
+  "code-copy",
+  "comments",
+  "edit-post",
+  "canonical-link",
+  "profile-mode",
+  "home-info-mode",
+  "related-posts",
+  "rss",
+  "multiple-authors",
+  "post-nav-links"
+]
+min_version = "0.158.0"
+
+[author]
+  name = "seedunk"
+  homepage = "https://github.com/seedunk"

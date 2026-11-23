@@ -1,0 +1,9 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{- with resources.Get "bootstrap-5.0.2/css/bootstrap.min.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}
+{{- with resources.Get "css/github-markdown.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{- end }}

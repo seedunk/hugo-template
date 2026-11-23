@@ -1,0 +1,67 @@
+# baseURL = "https://seedunk.github.io/hogo-template/"
+# 语言
+languageCode = "zh-CN" 
+# 网站标题
+title = "Seedunk Hugo Template" 
+
+publishDir = "public"
+
+themesDir = "themes"
+theme = "seedunk"
+
+[menus]
+  [[menus.main]]
+    name = 'README'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = '服务支持'
+    pageRef = '/support'
+    weight = 20
+  [[menus.main]]
+    name = 'TAGS'
+    pageRef = '/tags'
+    weight = 30
+
+# 开启摘要
+summaryLength = 70
+
+# 关闭不需要的内置模块，加快编译
+disableKinds = ["RSS", "sitemap", "taxonomy"]
+
+
+# 日期格式
+[params]
+  dateFormat = "2006-01-02"
+
+[module] 
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "i18n"
+    target = "i18n"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+
+#  README.md 挂载到content/README.md
+  [[module.mounts]]
+  source = "README.md"
+  target = "content/_index.md"
+ 
+  [[module.mounts]]
+  source = "assets"
+  target = "content/assets"

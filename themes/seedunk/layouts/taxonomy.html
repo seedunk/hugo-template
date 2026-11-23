@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>111
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+
+  <!--
+  <ul class="terms-tags">
+    {{- $type := .Type }}
+        {{- range $key, $value := .Data.Terms.Alphabetical }}
+            {{- $name := .Name }}
+            {{- $count := .Count }}
+            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .LinkTitle }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+            </li>
+        {{- end }}
+    {{- end }}
+  </ul>
+-->
+
+
+
+{{ end }}
+
+
+
+

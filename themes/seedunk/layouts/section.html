@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="markdown-body bg-white shadow-sm rounded">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <ul class="list-unstyled mt-4">
+    {{ range .Pages }}
+    <li class="py-2">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small class="text-muted ms-2">{{ .Date.Format "2006-01-02" }}</small>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
