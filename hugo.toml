@@ -1,4 +1,4 @@
-# baseURL = "https://seedunk.github.io/hogo-template/"
+baseURL = "https://seedunk.github.io/hogo-template/"
 # 语言
 languageCode = "zh-CN" 
 # 网站标题
