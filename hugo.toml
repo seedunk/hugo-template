@@ -4,7 +4,7 @@ languageCode = "zh-CN"
 # 网站标题
 title = "Seedunk Hugo Template" 
 
-publishDir = "public"
+publishDir = "target"
 
 themesDir = "themes"
 theme = "seedunk"

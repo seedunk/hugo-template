@@ -12,8 +12,9 @@
         <div class="container">
         {{ block "main" . }}{{ end }}
         </div>
+        <br>
     </main>
-    <footer>
+    <footer >
         {{ partial "footer.html" . }}
     </footer> 
 {{- with resources.Get "bootstrap-5.0.2/js/bootstrap.bundle.min.js" }}

@@ -1,7 +1,12 @@
 {{ define "main" }}
+
+<div class="markdown-body bg-white shadow-sm rounded">
+ 
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+   <br>
+   <div class="d-flex justify-content-start align-items-center "> 
+       {{- range .Pages }}
+         <a href="{{ .RelPermalink }}" class="btn btn-primary btn-sm mr-1">{{ .LinkTitle }}</a>
+       {{- end }}
+  </div> </div>
 {{ end }}
