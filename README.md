@@ -5,7 +5,7 @@ draft : false
 ---
  
 # Hugo Template
- [@seedunk](https://seedunk.github.io)
+ [Preview 预览](https://seedunk.github.io/hugo-template/) [@seedunk](https://seedunk.github.io) 
   
 ### 配置文件 
   - hugo.toml
